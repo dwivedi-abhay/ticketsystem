@@ -1,0 +1,19 @@
+package com.ticketsystem.booking.domain;
+import jakarta.persistence.*;
+
+@Entity
+@Table(name = "booking_seat")
+public class BookingSeat {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @Column(nullable = false)
+    private Long bookingId;
+
+    @Column(nullable = false)
+    private Long seatId;
+
+
+}
