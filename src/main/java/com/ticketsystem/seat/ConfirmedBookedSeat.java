@@ -10,6 +10,12 @@ import jakarta.persistence.*;
 )
 public class ConfirmedBookedSeat {
 
+    public ConfirmedBookedSeat(Long showId, Long seatId, Long bookingId){
+        this.bookingId = bookingId;
+        this.showId = showId;
+        this.seatId = seatId;
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -24,4 +30,5 @@ public class ConfirmedBookedSeat {
     private Long bookingId;
 
     // getters only
+
 }

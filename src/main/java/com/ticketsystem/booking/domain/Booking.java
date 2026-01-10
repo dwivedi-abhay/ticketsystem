@@ -52,4 +52,12 @@ public class Booking {
         this.status = status;
     }
 
+    public void markConfirmed(){
+        status = BookingStatus.CONFIRMED;
+    }
+
+    public void markExpired(){
+        status = BookingStatus.EXPIRED;
+    }
+
 }

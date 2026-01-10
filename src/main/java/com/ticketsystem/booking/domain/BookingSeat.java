@@ -1,6 +1,8 @@
 package com.ticketsystem.booking.domain;
 import jakarta.persistence.*;
+import lombok.Getter;
 
+@Getter
 @Entity
 @Table(name = "booking_seat")
 public class BookingSeat {
