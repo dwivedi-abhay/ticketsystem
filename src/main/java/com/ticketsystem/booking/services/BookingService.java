@@ -90,4 +90,8 @@ public class BookingService {
         booking.markExpired();
         bookingRepository.save(booking);
     }
+
+    public Booking getBooking(Long bookingId){
+        return bookingRepository.findById(bookingId).orElseThrow(() -> new IllegalStateException("Booking not found"));
+    }
 }
