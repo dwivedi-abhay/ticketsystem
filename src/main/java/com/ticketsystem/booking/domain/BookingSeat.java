@@ -5,6 +5,11 @@ import jakarta.persistence.*;
 @Table(name = "booking_seat")
 public class BookingSeat {
 
+    public BookingSeat(Long bookingId, Long seatId){
+        this.bookingId = bookingId;
+        this.seatId = seatId;
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

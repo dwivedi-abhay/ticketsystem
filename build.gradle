@@ -40,6 +40,24 @@ dependencies {
 	testImplementation "org.testcontainers:junit-jupiter:1.19.3"
 	testImplementation "org.testcontainers:postgresql:1.19.3"
 
+	//flyway
+	implementation 'org.springframework.boot:spring-boot-starter-flyway'
+	testImplementation 'org.springframework.boot:spring-boot-starter-flyway-test'
+	implementation 'org.flywaydb:flyway-database-postgresql'
+
+	//lombok
+	compileOnly 'org.projectlombok:lombok:1.18.30'
+	// Lombok as an annotation processor
+	annotationProcessor 'org.projectlombok:lombok:1.18.30'
+
+	// Lombok dependencies for test source code compilation
+	testCompileOnly 'org.projectlombok:lombok:1.18.30'
+	testAnnotationProcessor 'org.projectlombok:lombok:1.18.30'
+
+	implementation 'io.github.cdimascio:java-dotenv:5.2.2'
+
+
+
 }
 
 tasks.named('test') {

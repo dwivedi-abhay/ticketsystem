@@ -1,8 +1,10 @@
 package com.ticketsystem.booking.domain;
 import jakarta.persistence.*;
+import lombok.Getter;
 
 import java.time.Instant;
 
+@Getter
 @Entity
 @Table(name = "booking")
 public class Booking {
@@ -27,5 +29,27 @@ public class Booking {
     @Column(nullable = false)
     private Instant expiresAt;
 
+    protected Booking() {
+        // JPA only
+    }
+
+    public Booking(
+            Long userId,
+            Long showId,
+            BookingStatus status,
+            Instant createdAt,
+            Instant expiresAt
+    ) {
+        this.userId = userId;
+        this.showId = showId;
+        this.status = status;
+        this.createdAt = createdAt;
+        this.expiresAt = expiresAt;
+    }
+
+
+    public void setStatus(BookingStatus status){
+        this.status = status;
+    }
 
 }
