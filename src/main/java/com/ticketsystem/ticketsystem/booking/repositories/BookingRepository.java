@@ -1,7 +1,7 @@
-package com.ticketsystem.booking.repositories;
+package com.ticketsystem.ticketsystem.booking.repositories;
 
-import com.ticketsystem.booking.domain.Booking;
-import com.ticketsystem.booking.domain.BookingStatus;
+import com.ticketsystem.ticketsystem.booking.domain.Booking;
+import com.ticketsystem.ticketsystem.booking.domain.BookingStatus;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

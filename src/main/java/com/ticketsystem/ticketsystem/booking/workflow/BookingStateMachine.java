@@ -1,9 +1,11 @@
-package com.ticketsystem.booking.workflow;
+package com.ticketsystem.ticketsystem.booking.workflow;
 
 
-import com.ticketsystem.booking.domain.Booking;
-import com.ticketsystem.booking.domain.BookingStatus;
+import com.ticketsystem.ticketsystem.booking.domain.Booking;
+import com.ticketsystem.ticketsystem.booking.domain.BookingStatus;
+import org.springframework.stereotype.Component;
 
+@Component
 public class BookingStateMachine {
 
     public boolean canMoveToPendingPayment(Booking booking){

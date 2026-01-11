@@ -1,6 +1,6 @@
-package com.ticketsystem.seat.repository;
+package com.ticketsystem.ticketsystem.seat.repository;
 
-import com.ticketsystem.seat.ConfirmedBookedSeat;
+import com.ticketsystem.ticketsystem.seat.ConfirmedBookedSeat;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface ConfirmedBookedSeatRepository extends JpaRepository<ConfirmedBookedSeat, Long> {

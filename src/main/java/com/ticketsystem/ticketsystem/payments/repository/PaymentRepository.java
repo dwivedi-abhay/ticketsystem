@@ -1,6 +1,6 @@
-package com.ticketsystem.payments.repository;
+package com.ticketsystem.ticketsystem.payments.repository;
 
-import com.ticketsystem.payments.Payment;
+import com.ticketsystem.ticketsystem.payments.Payment;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

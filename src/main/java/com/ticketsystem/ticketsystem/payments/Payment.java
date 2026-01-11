@@ -1,4 +1,4 @@
-package com.ticketsystem.payments;
+package com.ticketsystem.ticketsystem.payments;
 
 import jakarta.persistence.*;
 

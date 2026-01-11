@@ -1,11 +1,9 @@
-package com.ticketsystem.booking.api;
+package com.ticketsystem.ticketsystem.booking.api;
 
 
-import com.ticketsystem.booking.domain.Booking;
-import com.ticketsystem.booking.services.BookingService;
+import com.ticketsystem.ticketsystem.booking.domain.Booking;
+import com.ticketsystem.ticketsystem.booking.services.BookingService;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @RestController
 @RequestMapping("/bookings")

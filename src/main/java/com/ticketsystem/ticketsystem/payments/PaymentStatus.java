@@ -1,4 +1,4 @@
-package com.ticketsystem.payments;
+package com.ticketsystem.ticketsystem.payments;
 
 public enum PaymentStatus {
     PENDING,
