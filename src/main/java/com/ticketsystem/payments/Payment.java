@@ -1,9 +1,11 @@
 package com.ticketsystem.payments;
 
 import jakarta.persistence.*;
+import lombok.Getter;
 
 import java.time.Instant;
 
+@Getter
 @Entity
 @Table(name = "payment")
 public class Payment {
@@ -30,4 +32,13 @@ public class Payment {
 
     @Column(nullable = false)
     private Instant createdAt;
+
+
+    public void markSuccess(){
+        paymentStatus = PaymentStatus.SUCCESS;
+    }
+
+    public void markFailed(){
+        paymentStatus = PaymentStatus.FAILED;
+    }
 }
