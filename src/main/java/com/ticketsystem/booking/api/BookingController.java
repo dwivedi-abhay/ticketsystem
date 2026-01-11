@@ -3,6 +3,8 @@ package com.ticketsystem.booking.api;
 
 import com.ticketsystem.booking.domain.Booking;
 import com.ticketsystem.booking.services.BookingService;
+import com.ticketsystem.security.auth.UserPrincipal;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -17,17 +19,17 @@ public class BookingController {
 
     @PostMapping
     public BookingResponse createBooking(
-            @RequestHeader("X-USER-ID") Long userId,
+            @AuthenticationPrincipal UserPrincipal user,
             @RequestBody CreateBookingRequest request
     ){
-        Booking booking = bookingService.createBooking(userId, request.showId(), request.seatIds());
+        Booking booking = bookingService.createBooking(user.getUserId(), request.showId(), request.seatIds());
 
         return toResponse(booking);
     }
 
     @GetMapping("/{bookingId}")
-    public BookingResponse getBooking(@PathVariable Long bookingId){
-        Booking booking = bookingService.getBooking(bookingId);
+    public BookingResponse getBooking(@PathVariable Long bookingId, @AuthenticationPrincipal UserPrincipal user){
+        Booking booking = bookingService.getBooking(bookingId, user.getUserId());
         return toResponse(booking);
     }
 

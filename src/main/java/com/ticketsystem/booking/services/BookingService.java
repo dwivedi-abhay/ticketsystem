@@ -90,7 +90,13 @@ public class BookingService {
         bookingRepository.save(booking);
     }
 
-    public Booking getBooking(Long bookingId){
-        return bookingRepository.findById(bookingId).orElseThrow(() -> new IllegalStateException("Booking not found"));
+    public Booking getBooking(Long bookingId, Long userId){
+
+        Booking booking =  bookingRepository.findById(bookingId).orElseThrow(() -> new IllegalStateException("Booking not found"));
+
+        if(!booking.getUserId().equals(userId)){
+            throw new SecurityException("not your booking");
+        }
+        return booking;
     }
 }
