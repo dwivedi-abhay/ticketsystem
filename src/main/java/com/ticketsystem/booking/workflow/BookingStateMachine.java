@@ -1,8 +1,8 @@
-package com.ticketsystem.ticketsystem.booking.workflow;
+package com.ticketsystem.booking.workflow;
 
 
-import com.ticketsystem.ticketsystem.booking.domain.Booking;
-import com.ticketsystem.ticketsystem.booking.domain.BookingStatus;
+import com.ticketsystem.booking.domain.Booking;
+import com.ticketsystem.booking.domain.BookingStatus;
 import org.springframework.stereotype.Component;
 
 @Component

@@ -1,4 +1,4 @@
-package com.ticketsystem.ticketsystem.booking.domain;
+package com.ticketsystem.booking.domain;
 
 public enum BookingStatus {
     INITIATED,

@@ -1,6 +1,6 @@
-package com.ticketsystem.ticketsystem.booking.api;
+package com.ticketsystem.booking.api;
 
-import com.ticketsystem.ticketsystem.booking.domain.BookingStatus;
+import com.ticketsystem.booking.domain.BookingStatus;
 
 import java.time.Instant;
 

@@ -1,4 +1,4 @@
-package com.ticketsystem.ticketsystem.booking.domain;
+package com.ticketsystem.booking.domain;
 import jakarta.persistence.*;
 import lombok.Getter;
 
@@ -7,6 +7,9 @@ import lombok.Getter;
 @Table(name = "booking_seat")
 public class BookingSeat {
 
+    protected BookingSeat() {
+        // required by JPA
+    }
     public BookingSeat(Long bookingId, Long seatId){
         this.bookingId = bookingId;
         this.seatId = seatId;

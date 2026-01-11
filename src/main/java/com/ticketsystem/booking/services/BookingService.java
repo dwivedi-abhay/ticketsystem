@@ -1,13 +1,13 @@
-package com.ticketsystem.ticketsystem.booking.services;
+package com.ticketsystem.booking.services;
 
-import com.ticketsystem.ticketsystem.booking.domain.Booking;
-import com.ticketsystem.ticketsystem.booking.domain.BookingSeat;
-import com.ticketsystem.ticketsystem.booking.domain.BookingStatus;
-import com.ticketsystem.ticketsystem.booking.repositories.BookingRepository;
-import com.ticketsystem.ticketsystem.booking.repositories.BookingSeatRepository;
-import com.ticketsystem.ticketsystem.booking.workflow.BookingStateMachine;
-import com.ticketsystem.ticketsystem.seat.ConfirmedBookedSeat;
-import com.ticketsystem.ticketsystem.seat.repository.ConfirmedBookedSeatRepository;
+import com.ticketsystem.booking.domain.Booking;
+import com.ticketsystem.booking.domain.BookingSeat;
+import com.ticketsystem.booking.domain.BookingStatus;
+import com.ticketsystem.booking.repositories.BookingRepository;
+import com.ticketsystem.booking.repositories.BookingSeatRepository;
+import com.ticketsystem.booking.workflow.BookingStateMachine;
+import com.ticketsystem.seat.ConfirmedBookedSeat;
+import com.ticketsystem.seat.repository.ConfirmedBookedSeatRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.stereotype.Service;
 

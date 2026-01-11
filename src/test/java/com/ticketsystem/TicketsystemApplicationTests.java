@@ -1,4 +1,4 @@
-package com.ticketsystem.ticketsystem;
+package com.ticketsystem;
 
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;

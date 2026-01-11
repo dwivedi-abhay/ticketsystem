@@ -1,8 +1,8 @@
-package com.ticketsystem.ticketsystem.booking.api;
+package com.ticketsystem.booking.api;
 
 
-import com.ticketsystem.ticketsystem.booking.domain.Booking;
-import com.ticketsystem.ticketsystem.booking.services.BookingService;
+import com.ticketsystem.booking.domain.Booking;
+import com.ticketsystem.booking.services.BookingService;
 import org.springframework.web.bind.annotation.*;
 
 @RestController

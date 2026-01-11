@@ -1,4 +1,4 @@
-package com.ticketsystem.ticketsystem.booking.domain;
+package com.ticketsystem.booking.domain;
 import jakarta.persistence.*;
 import lombok.Getter;
 

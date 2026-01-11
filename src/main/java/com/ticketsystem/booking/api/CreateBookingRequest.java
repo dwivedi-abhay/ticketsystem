@@ -1,4 +1,4 @@
-package com.ticketsystem.ticketsystem.booking.api;
+package com.ticketsystem.booking.api;
 
 import java.util.List;
 

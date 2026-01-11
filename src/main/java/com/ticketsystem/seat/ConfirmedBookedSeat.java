@@ -1,4 +1,4 @@
-package com.ticketsystem.ticketsystem.seat;
+package com.ticketsystem.seat;
 import jakarta.persistence.*;
 
 @Entity
